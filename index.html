@@ -29,6 +29,9 @@
 
   <!-- Hero Section -->
   <section class="hero-section">
+    <div class="hero-background">
+    <!-- background image will be applied here -->
+    </div>
     <div class="container mx-auto px-6 py-20 text-center">
       <h2 class="text-4xl font-extrabold mb-4">Welcome!</h2>
       <p class="text-lg text-gray-600 mb-8">Website for visualizing my projects!</p>
@@ -37,16 +40,24 @@
   </section>
 
   <style>
-    .hero-section {
-      background-image: url('Home background2.png');
-      background-size: cover;
-      background-position: center;
-      height: 80vh;
-      padding-top: 10vh;
-      background-blend-mode: multiply;
-      filter: blur(2px);
-      opacity: 0.8;
-    }
+   .hero-section {
+  height: 80vh;
+  padding-top: 10vh;
+  position: relative;
+  }
+
+  .hero-background {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    opacity: 0.8;
+  }
   </style>
 
   <!-- About Section -->
