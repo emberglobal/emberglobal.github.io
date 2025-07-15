@@ -1,8 +1,9 @@
 const ball = document.getElementById('ball');
+const animationContainer = document.getElementById('animation-container');
 
 // Set initial ball position and velocity
-let x = 250;
-let y = 250;
+let x = animationContainer.offsetWidth / 2;
+let y = animationContainer.offsetHeight / 2;
 let vx = 2;
 let vy = 2;
 
@@ -15,10 +16,10 @@ function animate() {
   y += vy;
 
   // Bounce off walls
-  if (x + 25 > 500 || x - 25 < 0) {
+  if (x + 25 > animationContainer.offsetWidth || x - 25 < 0) {
     vx = -vx;
   }
-  if (y + 25 > 500 || y - 25 < 0) {
+  if (y + 25 > animationContainer.offsetHeight || y - 25 < 0) {
     vy = -vy;
   }
 
