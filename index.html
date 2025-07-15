@@ -3,31 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ember Projects</title>
+  <title>Your Site Title</title>
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Link to a CSS file (optional) -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Welcome to Ember</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
+<body class="font-Inter bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Your Brand</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About This Site</h2>
-      <p>Just to showcase any projects I worked on...</p>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="bg-white">
+    <div class="container mx-auto px-6 py-20 text-center">
+      <h2 class="text-4xl font-extrabold mb-4">something here</h2>
+      <p class="text-lg text-gray-600 mb-8">another here</p>
+      <a href="#about" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">xxxxx</a>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Ember</p>
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-6 py-16">
+    <div class="text-center max-w-2xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-4">About This Site</h3>
+      <p class="text-gray-600">Soon tbh</p>
+    </div>
+  </section>
+
+  <!-- Services / Projects Grid -->
+  <section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold text-center mb-12">Projects</h3>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">Project Alpha</h4>
+          <p class="text-gray-600">Short description of Project Alpha.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">Project Beta</h4>
+          <p class="text-gray-600">Short description of Project Beta.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">Project Gamma</h4>
+          <p class="text-gray-600">Short description of Project Gamma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6">
+    <div class="container mx-auto px-6 text-center text-gray-600">
+      © 2025 Ember
+    </div>
   </footer>
 </body>
 </html>
