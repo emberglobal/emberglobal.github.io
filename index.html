@@ -87,34 +87,30 @@
     </div>
   </section>
 
- <section id="timeline-section">
+  <section id="timeline-section">
   <h2>My Projects Timeline</h2>
-  <div id="timeline" style="width: 100%; height: 600px;"></div>
+  <table class="table-auto w-full">
+    <thead>
+      <tr>
+        <th class="px-4 py-2">Year</th>
+        <th class="px-4 py-2">Project</th>
+        <th class="px-4 py-2">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border px-4 py-2">2022</td>
+        <td class="border px-4 py-2">Project 1</td>
+        <td class="border px-4 py-2">Short description of project 1</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">2021</td>
+        <td class="border px-4 py-2">Project 2</td>
+        <td class="border px-4 py-2">Short description of project 2</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
-
-<!-- ... other sections ... -->
-
-<script src="https://cdn.jsdelivr.net/npm/timelinejs@1.0.0/dist/timeline.min.js"></script>
-<script>
-  var timeline = new Timeline({
-    container: document.getElementById('timeline'),
-    data: [
-      {
-        start: '2022-01-01',
-        end: '2022-06-30',
-        title: 'Project 1',
-        description: 'Short description of project 1'
-      },
-      {
-        start: '2021-07-01',
-        end: '2021-12-31',
-        title: 'Project 2',
-        description: 'Short description of project 2'
-      }
-    ]
-  });
-</script>
-
 
   <!-- Footer -->
   <footer class="bg-white border-t py-6">
